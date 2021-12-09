@@ -1,0 +1,37 @@
+//Responsive design breakpoints
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
+:root {
+	//primary colors
+	--color-primary: #2589c7;
+	--color-primary-light: #4abaff;
+	--color-primary-dark: #0c507a;
+
+	//secondary colors
+	--color-secondary: #c78426;
+	--color-secondary-light: #ffb44e;
+	--color-secondary-dark: #7a4700;
+
+	--color-red: #f33232;
+	//universal colors
+	--underline: #dadce0;
+	--color-white: #ffffff;
+	--color-black: #000000;
+	--color-grey-0: #575555;
+	--color-grey-1: #404040;
+	--color-grey-2: #808080;
+	--color-grey-3: #bfbfbf;
+	--color-grey-4: #e6e6e6;
+
+	//default values
+	--default-padding: 2rem;
+	--default-font-size: 1rem;
+
+	@media only screen and (max-width: $bp-medium) {
+		--default-padding: 0;
+	}
+}

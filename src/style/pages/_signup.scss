@@ -1,0 +1,92 @@
+.signup-form {
+	margin: auto;
+	position: relative;
+	& .signup-icon {
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+		cursor: pointer;
+		& svg {
+			height: 3.5rem;
+			width: 3.5rem;
+
+			@media only screen and (max-width: $bp-small) {
+				height: 2.5rem;
+				width: 2.5rem;
+			}
+		}
+	}
+	& img {
+		display: block;
+		margin: 2rem auto;
+		width: 10rem;
+	}
+	& h1 {
+		text-align: center;
+		font-size: 3.5rem;
+		font-weight: 400;
+	}
+
+	& h4 {
+		text-align: center;
+		font-size: 1.7rem;
+		font-weight: 400;
+	}
+	& p {
+		text-align: center;
+		font-size: 1.2rem;
+		color: var(--color-grey-2);
+
+		& span {
+			text-decoration: underline;
+			font-weight: 500;
+			color: var(--color-primary-dark);
+		}
+	}
+
+	&-container {
+		margin-top: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		& button {
+			display: block;
+			margin: 3rem auto 1rem;
+			@include flex-center;
+			width: 30rem;
+			height: 5rem;
+			font-size: 1.7rem;
+			font-weight: 400;
+			cursor: pointer;
+			border: none;
+			outline: none;
+			border-radius: 0.2rem;
+			background-color: rgb(2, 136, 2);
+			color: white;
+		}
+	}
+
+	&-group {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-direction: column;
+		margin: 0.5rem 0;
+		& label {
+			font-size: 1.3rem;
+			color: var(--color-grey-2);
+		}
+
+		& input {
+			outline: none;
+			padding-left: 1.3rem;
+			height: 4rem;
+			width: 30rem;
+			border: none;
+			background-color: var(--color-grey-4);
+			border-radius: 0.2rem;
+		}
+	}
+}
